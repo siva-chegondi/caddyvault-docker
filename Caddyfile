@@ -1,0 +1,9 @@
+test.domain.maindomain
+root /app
+gzip
+log stdout
+errors stdout
+tls yourmail@host {
+	# uncomment following line to use letsencrypt prod CA
+ 	ca https://acme-staging-v02.api.letsencrypt.org/directory
+}
